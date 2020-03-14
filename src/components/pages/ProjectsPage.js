@@ -1,3 +1,8 @@
 import React from 'react';
 
-export default ;
+const ProjectsPage = () => {
+
+    return <div></div>
+};
+
+export default ProjectsPage;

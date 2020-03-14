@@ -1,3 +1,8 @@
 import React from 'react';
 
-export default ;
+const SkillsPage = () => {
+
+    return <div></div>
+};
+
+export default SkillsPage;

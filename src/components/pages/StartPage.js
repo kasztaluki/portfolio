@@ -1,3 +1,8 @@
 import React from 'react';
 
-export default ;
+const StartPage = () => {
+
+    return <div></div>
+};
+
+export default StartPage;

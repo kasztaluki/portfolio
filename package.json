@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "1.1.5"
   },
   "scripts": {
@@ -12,5 +13,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "prettier-eslint": "^9.0.1",
+    "stylelint": "^13.2.1",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
