@@ -1,0 +1,30 @@
+// media query
+@mixin mobile-large {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet-small {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet-large {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin laptop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  
+  @mixin section {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }

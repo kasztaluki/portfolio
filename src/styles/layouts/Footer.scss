@@ -1,0 +1,39 @@
+@import "../global.scss";
+
+.footer {
+    display: inline-flex;
+    float: left;
+    margin: 0;
+    padding: 3px 5% 3px 5%;
+    background-color: $color-background-menu;
+    height: 10vh;
+    width: 100%;
+    .copyright {
+        display: inline-block;
+        //padding-left: 5%;
+        text-align: center;
+        height: 50%;
+        font-size: $base-size;
+        font-weight: 300;
+        font-family: $font-text;
+        color: $color-text-title;
+    }
+    .footer_social {
+        margin: 5px;
+        margin-left: 40vw;
+        padding: 10px;
+        height: 50%;
+        display: inline-block;
+        text-align: right;
+        width: 30vw;
+        font-size: $base-size *2;
+        a {
+            margin: 5px;
+            padding: 10px;
+            color: $color-socials;
+            &:hover {
+                color: $color-text;
+            }
+        }
+    }
+}

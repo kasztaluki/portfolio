@@ -1,0 +1,40 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./normalize.scss";
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Audiowide|Caladea|Lora|Rock+Salt|Source+Code+Pro&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  @include tablet-large {
+    padding: 0 25px;
+  }
+}
+
+a {
+  color: $color-text;
+  transition: 0.3s;
+}
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
