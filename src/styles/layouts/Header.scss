@@ -6,7 +6,6 @@
     margin: 0;
     padding: 5px;
     width: 33%;
-    height: 100vh;
     background-color: $color-background-footer;
     .navigation {
         display: block;
@@ -44,5 +43,10 @@
             color: $color-text;
             font-family: $font-menu;
         }
+    }
+    @include tablet-large {
+        display: block;
+        float: center;
+        width: 100vw;
     }
 }

@@ -17,12 +17,14 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  //min-width: 1200px;
   min-height: 100vh;
   display: flex;
-  flex-flow: row wrap;
+  justify-content: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
   @include tablet-large {
-    padding: 0 25px;
+    padding: 0;
   }
 }
 
