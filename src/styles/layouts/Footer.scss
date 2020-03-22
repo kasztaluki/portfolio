@@ -1,7 +1,7 @@
 @import "../global.scss";
 
 .footer {
-    display: block;
+    display: flex;
     float: left;
     margin: 0;
     padding: 3px 5% 3px 5%;
@@ -16,6 +16,9 @@
         font-weight: 300;
         font-family: $font-text;
         color: $color-text-title;
+        @include tablet-large {
+            padding-top: 20%;
+        }
     }
     .footer_social {
         margin: 5px;
@@ -33,6 +36,21 @@
             &:hover {
                 color: $color-text;
             }
+            @include tablet-large {
+                display: block;
+                margin: 0;
+                padding: 10%;
+            }
         }
+        @include tablet-large {
+            margin: 0;
+            padding: 10%;
+            float: right;
+        }
+    }
+    @include tablet-large {
+        display: block;
+        width: 100vw;
+        float: center;
     }
 }

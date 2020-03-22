@@ -1,5 +1,5 @@
 /* eslint-disable react/prefer-stateless-function */
-import React, { Component } from "react";
+import React, { Component, } from "react";
 import "../../styles/layouts/Footer.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,11 +8,16 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 class Footer extends Component {
   render() {
+
+    const date = new Date();
+    const year = date.getFullYear();
+   
+
     return (
       <footer className="footer">
         <div className="copyright">
           <p>
-            <span>Copyright &copy; WebDevChallenge 2020.</span>
+            <span>Copyright &copy; WebDevChallenge {year}.</span>
             <br />
             <span>designed by Łukasz Grabowski</span>
           </p>
