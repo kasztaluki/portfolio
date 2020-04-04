@@ -1,5 +1,5 @@
 /* eslint-disable react/prefer-stateless-function */
-import React, { Component, } from "react";
+import React, { Component } from "react";
 import "../../styles/layouts/Footer.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +11,6 @@ class Footer extends Component {
 
     const date = new Date();
     const year = date.getFullYear();
-   
 
     return (
       <footer className="footer">

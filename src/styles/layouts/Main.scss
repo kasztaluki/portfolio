@@ -1,27 +1,28 @@
 @import "../global.scss";
 
-.main_content {
+.main {
     display: inline-flex;
     float: right;
     background-color: $color-background-content;
     width: 67%;
     margin: 0;
     padding: 5%;
-    .content {
-        display: block;
-        margin: 10px;
-        padding: 15px;
-        width: 100%;
-        color: $color-text-dark;
-        text-align: center;
-        p {
-            display: block;
-            font-size: $base-size;
-        }
+    //position: relative;
+    @include tablet-large {
+      padding: 15px 0;
+    }
+  }
+  .wrapper {
+    //position: absolute;
+    right: 0;
+    left: 0;
+    @include mobile-large {
+      top: 180px;
+    }
+    @include tablet-small {
+      top: 200px;
     }
     @include tablet-large {
-        display: block;
-        float: center;
-        width: 100vw;
+      top: 210px;
     }
-}
+  }

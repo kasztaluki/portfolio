@@ -7,14 +7,16 @@
     padding: 5px;
     width: 33%;
     background-color: $color-background-footer;
+    min-height: 100%;
     .navigation {
-        display: block;
-        margin: 25px;
+        display: flex;
+        margin-left: 25px;
+        max-height: fit-content;
+        //position: fixed;
         .title {
-            margin: 15px 15px 15vh;
-            padding-top: 30px;
+            padding: 20px 0px 30px;
             .title_logo {
-                width: 110%;
+                width: 50%;
                 float: center;
                 @include tablet-large {
                     width: 100%;
@@ -22,11 +24,11 @@
             }
             .title_social {
                 margin: 10px;
-                padding-top: 15vh;
+                padding: 20vh 10vw 5vh;
                 font-size: 30px;
-                text-align: center;
+                float: center;
                 a{
-                    margin-top: 30vh;
+                    margin-top: 15vh;
                     margin: 5px;
                     color: $color-socials;
                     &:hover {
@@ -34,13 +36,13 @@
                     }
                 }
             }
-        }
-        .navigation_menu {
-            margin: 10px;
-        //    padding: 45% 10px 10px 10px;
-            font-size: $base-size * 2;
-            color: $color-text;
-            font-family: $font-menu;
+            .navigation_menu {
+                margin: 10px;
+                //padding-top: 5vh;
+                font-size: $base-size * 2;
+                color: $color-text;
+                font-family: $font-menu;
+            }
         }
     }
     @include tablet-large {
