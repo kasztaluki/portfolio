@@ -15,7 +15,7 @@ class Header extends Component {
   constructor(props) {
       super(props);
       this.state = {
-        openMenu: false
+        openMenu: false,
         // scroll: false
       };
     }
@@ -29,7 +29,7 @@ class Header extends Component {
     // }
 
     handleMenuClick = () => {
-      this.setState({ openMenu: !this.state.openMenu });
+      this.setState({ openMenu: !this.openMenu });
     };
 
     // handleScroll = event => {
@@ -99,13 +99,6 @@ class Header extends Component {
             <nav className={`menu${openMenu ? " menu--open" : ""}`}>
               <ul className="navigation_menu">{navigation}</ul>
             </nav>
-            {/* <nav className="">
-              <div>Start</div>
-              <div>O mnie</div>
-              <div>Umiejętności</div>
-              <div>Projekty</div>
-              <div>Kontakt</div>
-            </nav> */}
           </div>
         </div>
       </header>

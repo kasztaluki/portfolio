@@ -1,0 +1,11 @@
+@import "../global.scss";
+
+.contact {
+    display: inline-flex;
+    float: right;
+    background-color: $color-background-content;
+    width: 67%;
+    margin: 0;
+    padding: 5%;
+    color: $color-background-menu;
+}

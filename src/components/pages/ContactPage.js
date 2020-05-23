@@ -1,8 +1,9 @@
 import React from "react";
+import "../../styles/pages/ContactPage.scss";
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="contact">
       <div>
         <p>Skontaktuj się ze mną</p>
       </div>

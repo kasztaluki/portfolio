@@ -42,6 +42,11 @@
                 font-size: $base-size * 2;
                 color: $color-text;
                 font-family: $font-menu;
+                .menu_item{
+                    &:hover {
+                        color: $color-text-title;
+                    }
+                }
             }
         }
     }

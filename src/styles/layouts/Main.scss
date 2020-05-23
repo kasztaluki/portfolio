@@ -7,15 +7,21 @@
     width: 67%;
     margin: 0;
     padding: 5%;
-    //position: relative;
+    position: relative;
     @include tablet-large {
       padding: 15px 0;
     }
   }
   .wrapper {
-    //position: absolute;
-    right: 0;
-    left: 0;
+    position: absolute;
+    display: inline-flex;
+    float: right;
+    background-color: $color-background-content;
+    width: 67%;
+    margin: 0;
+    padding: 5%;
+    // right: 0;
+    // left: 0;
     @include mobile-large {
       top: 180px;
     }

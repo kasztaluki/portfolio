@@ -1,7 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
-import { TransitionGroup } from "react-transition-group";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import "../../styles/layouts/Main.scss";
 
@@ -19,20 +19,26 @@ class Main extends Component {
   }
 
   render() {
-    const location = this.props;
+    const {location} = this.props;
 
     return (
       <TransitionGroup component="main" className="main">
-      <div className="wrapper">
-        <Switch location={location}>
-              <Route path="/" exact component={StartPage} />
-              <Route path="/about" exact component={AboutPage} />
-              <Route path="/skills" exact component={SkillsPage} />
-              <Route path="/projects" exact component={ProjectsPage} />
-              <Route path="/contact" exact component={ContactPage} />
-              <Route component={NotFoundPage} />
-            </Switch>
-      </div>
+        <CSSTransition
+            key={location.key}
+            timeout={{ enter: 800, exit: 400 }}
+            classNames="fade"
+          >
+          <div className="wrapper">
+            <Switch location={location}>
+                  <Route path="/" exact component={StartPage} />
+                  <Route path="/about" exact component={AboutPage} />
+                  <Route path="/skills" exact component={SkillsPage} />
+                  <Route path="/projects" exact component={ProjectsPage} />
+                  <Route path="/contact" exact component={ContactPage} />
+                  <Route path="/notfound" exact component={NotFoundPage} />
+                </Switch>
+          </div>
+        </CSSTransition>
       </TransitionGroup>
     );
   }
