@@ -7,14 +7,16 @@
     width: 67%;
     margin: 0;
     padding: 5%;
+    min-height: 100%;
     position: relative;
     @include tablet-large {
       padding: 15px 0;
     }
   }
   .wrapper {
-    position: absolute;
+    //position: absolute;
     display: inline-flex;
+    height: fit-content;
     float: right;
     background-color: $color-background-content;
     width: 67%;

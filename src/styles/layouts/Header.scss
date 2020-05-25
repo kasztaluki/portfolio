@@ -12,11 +12,12 @@
         display: flex;
         margin-left: 25px;
         max-height: fit-content;
-        //position: fixed;
+        
         .title {
             padding: 20px 0px 30px;
+            //position: fixed;
             .title_logo {
-                width: 50%;
+                width: 100%;
                 float: center;
                 @include tablet-large {
                     width: 100%;
@@ -42,7 +43,9 @@
                 font-size: $base-size * 2;
                 color: $color-text;
                 font-family: $font-menu;
+                position: fixed;
                 .menu_item{
+                    
                     &:hover {
                         color: $color-text-title;
                     }

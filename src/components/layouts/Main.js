@@ -19,11 +19,13 @@ class Main extends Component {
   }
 
   render() {
+    // eslint-disable-next-line react/prop-types
     const {location} = this.props;
 
     return (
       <TransitionGroup component="main" className="main">
         <CSSTransition
+            // eslint-disable-next-line react/prop-types
             key={location.key}
             timeout={{ enter: 800, exit: 400 }}
             classNames="fade"
@@ -35,7 +37,7 @@ class Main extends Component {
                   <Route path="/skills" exact component={SkillsPage} />
                   <Route path="/projects" exact component={ProjectsPage} />
                   <Route path="/contact" exact component={ContactPage} />
-                  <Route path="/notfound" exact component={NotFoundPage} />
+                  <Route component={NotFoundPage} />
                 </Switch>
           </div>
         </CSSTransition>
