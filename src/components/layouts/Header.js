@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 // images
-import logoTitle from "../../images/logoTitle.PNG";
+import logoTitle from "../../assets/images/logoTitle.PNG";
 
 class Header extends Component {
 

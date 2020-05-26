@@ -8,7 +8,7 @@ import "../../styles/layouts/Main.scss";
 import StartPage from "../pages/StartPage";
 import AboutPage from "../pages/AboutPage";
 import SkillsPage from "../pages/SkillsPage";
-import ProjectsPage from "../pages/ProjectsPage";
+import ProjectsPage from "../pages/projectsPage/ProjectsPage";
 import ContactPage from "../pages/ContactPage";
 import NotFoundPage from "../pages/NotFoundPage";
 
