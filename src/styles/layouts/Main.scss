@@ -4,33 +4,36 @@
     display: inline-flex;
     float: right;
     background-color: $color-background-content;
-    width: 67%;
+    width: 75%;
     margin: 0;
     padding: 5%;
     min-height: 100vh;
     position: relative;
+    border: 1px solid black;
     @include tablet-large {
       padding: 15px 0;
     }
-  }
-  .wrapper {
-    //position: absolute;
-    display: inline-flex;
-    height: fit-content;
-    float: right;
-    background-color: $color-background-content;
-    width: 67%;
-    margin: 0;
-    padding: 5%;
-    // right: 0;
-    // left: 0;
-    @include mobile-large {
-      top: 180px;
+    .page__title{
+        color: $color-background-menu;
+        border: 1px solid black;
     }
-    @include tablet-small {
-      top: 200px;
+    .wrapper {
+      float: right;
+      background-color: $color-background-content;
+      width: 100%;
+      margin: 0;
+      padding: 5%;
+      border: 1px solid black;
+      // right: 0;
+      // left: 0;
+      @include mobile-large {
+        top: 180px;
+      }
+      @include tablet-small {
+        top: 200px;
+      }
+      @include tablet-large {
+        top: 210px;
+      }
     }
-    @include tablet-large {
-      top: 210px;
-    }
-  }
+}

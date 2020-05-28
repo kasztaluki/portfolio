@@ -1,7 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { TransitionGroup } from "react-transition-group";
 
 import "../../styles/layouts/Main.scss";
 
@@ -24,12 +24,7 @@ class Main extends Component {
 
     return (
       <TransitionGroup component="main" className="main">
-        <CSSTransition
-            // eslint-disable-next-line react/prop-types
-            key={location.key}
-            timeout={{ enter: 800, exit: 400 }}
-            classNames="fade"
-          >
+          <h1 className="page__title">{}</h1>
           <div className="wrapper">
             <Switch location={location}>
                   <Route path="/" exact component={StartPage} />
@@ -40,7 +35,6 @@ class Main extends Component {
                   <Route component={NotFoundPage} />
                 </Switch>
           </div>
-        </CSSTransition>
       </TransitionGroup>
     );
   }

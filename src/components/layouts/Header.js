@@ -30,6 +30,7 @@ class Header extends Component {
 
     handleMenuClick = () => {
       this.setState({ openMenu: !this.openMenu });
+      document.documentElement.scrollTop = 0;
     };
 
     // handleScroll = event => {
@@ -39,18 +40,18 @@ class Header extends Component {
     //     this.setState({ scroll: true });
     //   }
     // };
-
+      
   render() {
     const { openMenu } = this.state;
 
     const list = [
-    { name: "Start", path: "/", exact: true },
-    { name: "O mnie", path: "/about" },
-    { name: "Umiejętności", path: "/skills" },
-    { name: "Projekty", path: "/projects" },
-    { name: "Kontakt", path: "/contact" }
-    ];
-
+      { name: "Start", path: "/", exact: true },
+      { name: "O mnie", path: "/about" },
+      { name: "Umiejętności", path: "/skills" },
+      { name: "Projekty", path: "/projects" },
+      { name: "Kontakt", path: "/contact" }
+      ];
+  
     const navigation = list.map(item => (
     <li className="menu_item" key={item.name}>
         <NavLink
