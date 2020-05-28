@@ -3,7 +3,6 @@
 .header {
     display: inline-flex;
     float: left;
-    padding-bottom: 100px;
     width: 25%;
     background-color: $color-background-footer;
     min-height: 100vh;
@@ -40,13 +39,17 @@
                 }
             }
             .navigation_menu {
-                margin: 10px;
+                margin: 5px;
+                padding-right: 2%;
+                align-items: center;
                 font-size: $base-size * 2;
                 color: $color-text;
                 font-family: $font-menu;
                 position: fixed;
                 list-style: none;
-                //border: 1px solid black;
+                border-left: 3px solid $color-text-title;
+                border-right: 3px solid $color-text-title;
+                border-radius: 15px;
                 .menu_item{
                     margin: 5px;
                     &:hover {

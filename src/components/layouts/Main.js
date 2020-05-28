@@ -23,9 +23,11 @@ class Main extends Component {
     const {location} = this.props;
 
     return (
+      
       <TransitionGroup component="main" className="main">
-          <h1 className="page__title">{}</h1>
+        
           <div className="wrapper">
+          <h1 className="page__title">tytuł</h1>
             <Switch location={location}>
                   <Route path="/" exact component={StartPage} />
                   <Route path="/about" exact component={AboutPage} />

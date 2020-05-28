@@ -47,8 +47,8 @@ class Header extends Component {
     const list = [
       { name: "Start", path: "/", exact: true },
       { name: "O mnie", path: "/about" },
-      { name: "Umiejętności", path: "/skills" },
       { name: "Projekty", path: "/projects" },
+      { name: "Oferta", path: "/skills" },
       { name: "Kontakt", path: "/contact" }
       ];
   
