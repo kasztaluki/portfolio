@@ -3,9 +3,12 @@
 .project__item {
     //display: inline-flex;
     list-style: none;
-    border: 1px solid black;
+    //border: 1px solid black;
     .project__description{
         display: inline-flex;
-        border: 1px solid black;
+        //border: 1px solid black;
+        .projectItem__image {
+            border-radius: 50%;
+        }
     }
 }
