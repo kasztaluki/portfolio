@@ -27,7 +27,7 @@ class Main extends Component {
       <TransitionGroup component="main" className="main">
         
           <div className="wrapper">
-          <h1 className="page__title">tytuł</h1>
+          {/* <h1 className="page__title">tytuł</h1> */}
             <Switch location={location}>
                   <Route path="/" exact component={StartPage} />
                   <Route path="/about" exact component={AboutPage} />

@@ -6,23 +6,24 @@ const ProjectItem = ({ name, image, codeLink, releaseLink, description, tech }) 
    <div className="project__item">
       <h1>{name}</h1>
       <div className="project__description">
-         <div >
-            <img  src={image} 
-                  className="projectItem__image"
-                  alt={name} sizes="200x200"/>
-            <div>
-               <a  href={codeLink} 
-                  className="projectItem__codeLink" 
-                  target="_blank"
-                  rel="noopener noreferrer">Kod</a>
-               <a  href={releaseLink} 
-                  className="projectItem__releaseLink" 
-                  target="_blank"
-                  rel="noopener noreferrer">Projekt</a>
+            <div className="projectItem__image">
+               <img  src={image}
+               alt={name} sizes="200x200" />
+               <div className="projectItem__links">
+                  <a  href={codeLink} 
+                     className="projectItem__codeLink" 
+                     target="_blank"
+                     rel="noopener noreferrer">Kod</a>
+                  <a  href={releaseLink} 
+                     className="projectItem__releaseLink" 
+                     target="_blank"
+                     rel="noopener noreferrer">Projekt</a>
+               </div>
             </div>
-         </div>
+         <div>
             <p>O projekcie:<br />{description}</p>
             <p><strong>Tech Stack:<br />{tech}</strong></p>
+         </div>
       </div>
    </div>
 );
